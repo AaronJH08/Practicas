@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(47, 45, 45);
+    display: flex;
+    flex-direction: column;
+}
+
+.barra_superior{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+}
+
+.barra_superior a{ color: white; text-decoration: none;}
+
+.boton-sesion{
+    background: #0387eb;
+    border-radius: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.principal{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor{
+    text-align: center;
+    width: min(650px, 92vw);
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 90px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.tarjeta-busqueda{
+    display: flex;
+    border: 1px solid #dadce0;
+    border-radius: 24px;
+    padding: 8px 12px;
+    margin: 0 auto 14px;
+    max-width: 600px;
+
+}
+
+.entrada{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 8px;
+    background-color: rgb(47, 45, 45);
+}
+
+.botones{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.boton{
+    border-radius: 6px;
+    background-color: #262525;
+    color: #dadce0;
+    padding: 8px 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+footer{ background: #262525;
+        margin-top: auto;
+}
+
+
+.fila-pie{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    color: #dfe1e2;
+}
+
+.enlaces a{
+    margin-right: 14px;
+    color: inherit;
+    text-decoration: none;
+}

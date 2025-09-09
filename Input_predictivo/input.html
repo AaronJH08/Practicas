@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar al equipo de tochito</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Formulario — Tochito Bandera</h1>
+
+  <form action="#" method="post">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" name="nombre" type="text" placeholder="Ej. Luis Jaimes" >
+
+    <label for="correo">Correo</label>
+    <input id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" >
+
+    <label for="posicion">Posición (predictivo)</label>
+    <input id="posicion" name="posicion" type="text" list="posiciones" placeholder="Escribe y elige">
+    <datalist id="posiciones">
+      <option value="QB"></option>
+      <option value="WR"></option>
+      <option value="RB"></option>
+      <option value="CB"></option>
+      <option value="Rusher"></option>
+    </datalist>
+
+    <label for="ciudad">Ciudad/Sede (predictivo)</label>
+    <input id="ciudad" name="ciudad" type="text" list="ciudades" placeholder="Escribe y elige">
+    <datalist id="ciudades">
+      <option value="CDMX"></option>
+      <option value="Guadalajara"></option>
+      <option value="Monterrey"></option>
+      <option value="Puebla"></option>
+      <option value="Querétaro"></option>
+    </datalist>
+
+    <p>Talla de jersey</p>
+    <label><input type="radio" name="talla" value="S" > S</label>
+    <label><input type="radio" name="talla" value="M"> M</label>
+    <label><input type="radio" name="talla" value="L"> L</label>
+    <label><input type="radio" name="talla" value="XL"> XL</label>
+
+    <label for="disp">Disponibilidad</label>
+    <select id="disp" name="disp" >
+      <option value="">Selecciona</option>
+      <option value="semana">Entre semana</option>
+      <option value="fin">Fines de semana</option>
+      <option value="flex">Flexible</option>
+    </select>
+
+    <label>
+      <input type="checkbox" name="reglas" >
+      Acepto las reglas del equipo
+    </label>
+
+    <div>
+      <button type="reset">Limpiar</button>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+</html>

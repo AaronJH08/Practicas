@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    padding: 16px 8px;
+}
+
+form {
+    max-width: 520px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 6px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2d6cdf;
+}
+
+p {
+    margin: 14px 0 6px;
+}
+
+div {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background: #eee;
+}
+
+button[type="submit"] {
+    background: #2d6cdf;
+    color: #fff;
+}

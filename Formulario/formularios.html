@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formularios por pasos</title>
+  <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+
+  <h1>Formulario paso a paso</h1>
+
+  <a id="s1"></a>
+  <a id="s2"></a>
+  <a id="s3"></a>
+  <a id="s4"></a>
+
+  <div class="wrap">
+
+    <form id="f1" class="paso">
+      <meter min="0" max="4" value="1"></meter>
+      <fieldset>
+        <legend>Datos personales (1/4)</legend>
+
+        <label for="nombres">Nombres</label>
+        <input id="nombres" type="text" name="nombres" placeholder="Tu nombre">
+
+        <label for="correo">Correo</label>
+        <input id="correo" type="email" name="correo" placeholder="tucorreo@ejemplo.com">
+
+        <label for="tel">Teléfono</label>
+        <input id="tel" type="tel" name="tel" placeholder="55 1234 5678">
+
+        <label for="nac">Fecha de nacimiento</label>
+        <input id="nac" type="date" name="nacimiento">
+
+        <label for="pais">País</label>
+        <input id="pais" name="pais" list="paises" placeholder="Escribe o elige">
+        <datalist id="paises">
+          <option value="México">
+          <option value="Estados Unidos">
+          <option value="Canadá">
+          <option value="España">
+          <option value="Argentina">
+          <option value="Colombia">
+        </datalist>
+
+        <div class="nav">
+          <a class="btn" href="#s2">Siguiente</a>
+        </div>
+      </fieldset>
+    </form>
+
+    <form id="f2" class="paso">
+      <meter min="0" max="4" value="2"></meter>
+      <fieldset>
+        <legend>Cuenta y preferencia (2/4)</legend>
+
+        <label for="pass">Contraseña</label>
+        <input id="pass" type="password" name="pass">
+
+        <label for="web">Sitio web</label>
+        <input id="web" type="url" name="web" placeholder="https://">
+
+        <label for="color">Color favorito</label>
+        <input id="color" type="color" name="color">
+
+        <label for="vol">Volumen</label>
+        <input id="vol" type="range" name="vol" min="0" max="100" value="50">
+
+        <label for="hora">Hora de contacto</label>
+        <input id="hora" type="time" name="hora">
+
+        <div class="nav">
+          <a class="btn" href="#s1">Atrás</a>
+          <a class="btn" href="#s3">Siguiente</a>
+        </div>
+      </fieldset>
+    </form>
+
+    <form id="f3" class="paso">
+      <meter min="0" max="4" value="3"></meter>
+      <fieldset>
+        <legend>Fechas y archivos (3/4)</legend>
+
+        <label for="bus">Buscar</label>
+        <input id="bus" type="search" name="busqueda" placeholder="Buscar...">
+
+        <label for="ine">Subir identificación</label>
+        <input id="ine" type="file" name="ine">
+
+        <label for="mes">Mes de inicio</label>
+        <input id="mes" type="month" name="mes">
+
+        <label for="sem">Semana objetivo</label>
+        <input id="sem" type="week" name="semana">
+
+        <label for="cita">Cita</label>
+        <input id="cita" type="datetime-local" name="cita">
+
+        <div class="nav">
+          <a class="btn" href="#s2">Atrás</a>
+          <a class="btn" href="#s4">Siguiente</a>
+        </div>
+      </fieldset>
+    </form>
+
+    <form id="f4" class="paso">
+      <meter min="0" max="4" value="4"></meter>
+      <fieldset>
+        <legend>Confirmación (4/4)</legend>
+
+        <label for="acepto" class="fila">
+          <input id="acepto" type="checkbox" name="terminos">
+          Acepto términos
+        </label>
+
+        <div class="fila">
+          <span>Recibir noticias</span>
+          <input id="news-si" type="radio" name="news" value="si">
+          <label for="news-si">Sí</label>
+          <input id="news-no" type="radio" name="news" value="no">
+          <label for="news-no">No</label>
+        </div>
+
+        <label for="codigo">Código de referencia</label>
+        <input id="codigo" type="text" name="codigo" placeholder="ABC123">
+
+        <label for="calif">Calificación 0–10</label>
+        <input id="calif" type="number" name="rating" min="0" max="10">
+
+        <div class="nav">
+          <a class="btn" href="#s3">Atrás</a>
+          <a class="btn" href="#s1">Terminar</a>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+
+</body>
+</html>

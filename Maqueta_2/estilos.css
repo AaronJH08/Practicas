@@ -1,0 +1,136 @@
+:root{
+  --naranja:#f25f3a;
+  --naranja-2:#ff7a57;
+  --oscuro:#1f1f27;
+  --gris:#737782;
+  --bg:#faf7f5;
+  --blanco:#fff;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0; padding:0}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:#222; line-height:1.5; background:#fff;
+}
+img{max-width:100%; display:block}
+a{text-decoration:none; color:inherit}
+
+header{background:#fff; position:sticky; top:0; z-index:10}
+.nav{
+  display:grid;
+  grid-template-columns: auto 1fr auto;
+  gap:24px;
+  align-items:center;
+  padding:16px 8%;
+}
+.nav img{height:28px}
+.menu{
+  list-style:none; margin:0; padding:0;
+  display:flex; gap:24px; justify-content:center;
+}
+.menu a{color:#333; font-weight:600}
+.menu a:hover{color:var(--naranja)}
+.boton-nav a{
+  display:inline-block; padding:10px 18px; border-radius:24px;
+  background:var(--naranja); color:#fff; font-weight:700;
+}
+
+.contenedor{
+  display:grid; grid-template-columns: 1fr 1fr; gap:32px;
+  padding:64px 8%; align-items:center;
+}
+.contenedor .columna h1{
+  font-size: clamp(1.8rem, 3vw, 5rem);
+  line-height:1.15; margin:0 0 12px;
+}
+.contenedor .columna p{color:#555; margin:0 0 18px}
+.contenedor .columna button{
+  background:var(--naranja); color:#fff; border:0;
+  padding:12px 20px; border-radius:24px; font-weight:700;
+cursor:pointer;
+}
+
+.contenedor-dos{
+  display:grid; grid-template-columns: 1fr 1fr; gap:32px;
+  padding:64px 8%; align-items:start; background:var(--bg);
+}
+.contenedor-dos h2{font-size: clamp(1.4rem, 2.5vw, 2.2rem); margin:0 0 12px}
+.contenedor-dos > div p{color:#555; margin:0}
+
+.items{display:flex; flex-direction:column; gap:24px}
+.item{display:flex; gap:16px; align-items:flex-start}
+.numero{
+  background:var(--naranja); color:#fff; font-weight:700;
+  padding:6px 14px; border-radius:20px; min-width:48px; text-align:center;
+}
+.texto h3{margin:0 0 6px; font-size:1.05rem}
+.texto p{margin:0; color:#666}
+
+.testimonios{background:#fff; padding:72px 8% 88px; text-align:center}
+.cartas{
+  display:grid; grid-template-columns: repeat(4,1fr); gap:24px;
+  max-width:1100px; margin:0 auto 28px;
+}
+.carta{
+  background:#fff; border-radius:12px; padding:56px 18px 22px;
+  box-shadow:0 12px 24px rgba(0,0,0,.06);
+  position:relative; min-height:220px;
+}
+.avatar{
+  width:70px; height:70px; border-radius:50%; 
+  position:absolute; left:50%; top:-36px; transform:translateX(-50%);
+}
+.nombre{margin:0 0 6px; font-weight:800}
+.texto{margin:0; color:#666}
+.btn-testimonios{
+   background:var(--naranja); color:#fff;
+  padding:12px 20px; border-radius:24px; font-weight:700;
+}
+
+.cta{
+  display:grid; grid-template-columns:1fr auto; align-items:center; gap:20px;
+  padding:48px 8%; color:#fff;
+  background: var(--naranja-2);
+}
+.cta-titulo{margin:0; font-size: clamp(1.6rem, 3vw, 2.4rem); line-height:1.2}
+.cta-btn{
+  background:#fff; color:var(--naranja);
+  padding:12px 22px; border-radius:28px; font-weight:800;
+  
+}
+
+.pie{background:var(--oscuro); color:#fff}
+.logo-redes{
+  display:grid; grid-template-columns: repeat(4,1fr); 
+  gap:24px; padding:40px 8%; align-items:start;
+}
+.marca img{width:120px; height:auto; margin-bottom:70px}
+
+.redes{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px}
+.redes a{
+  display:inline-grid; place-items:center;
+  width:20px; height:2px; border-radius:50%;
+  
+}
+.redes img{width:18px; height:18px}
+
+.enlaces{display:flex; flex-direction:column; gap:10px}
+.enlaces a{color:#c9cbd1}
+.enlaces a:hover{color:#fff}
+
+.msj{justify-self:end}
+.input{
+  display:flex; gap:8px; background:#2b2b36;
+  padding:6px; border-radius:28px; align-items:center;
+}
+.input input{
+  flex:1; min-width:0; border:0; outline:0; background:transparent;
+  color:#fff; padding:10px 12px;
+}
+.input input::placeholder{color:#c9cbd1}
+.input button{
+  border:0; padding:10px 16px; border-radius:22px;
+  background:var(--naranja); color:#fff; font-weight:700; cursor:pointer;
+}
+.copy{display:block; color:#aeb0b6; margin-top:12px; font-size:.85rem}
