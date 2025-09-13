@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios de Strings</title>
+</head>
+<body>
+  <script>
+    let nombreSaludo;
+    let mensajeSaludo;
+
+    nombreSaludo = "Luis";
+    mensajeSaludo = "Hola, " + nombreSaludo + ".";
+    console.log(mensajeSaludo);
+
+    let nombrePersona;
+    let apellidoPersona;
+    let nombreCompleto;
+
+    nombrePersona = "Luis";
+    apellidoPersona = "Jajmes";
+    nombreCompleto = nombrePersona + " " + apellidoPersona;
+    console.log(nombreCompleto);
+
+    let textoCaracteres;
+    let cantidadCaracteres;
+
+    textoCaracteres = "Hola mundo";
+    cantidadCaracteres = textoCaracteres.length;
+    console.log(cantidadCaracteres);
+
+    let textoMayusculas;
+    let textoEnMayusculas;
+
+    textoMayusculas = "javascript";
+    textoEnMayusculas = textoMayusculas.toUpperCase();
+    console.log(textoEnMayusculas);
+
+    let textoMinusculas;
+    let textoEnMinusculas;
+
+    textoMinusculas = "JavaScript";
+    textoEnMinusculas = textoMinusculas.toLowerCase();
+    console.log(textoEnMinusculas);
+
+    let textoPrimera;
+    let primeraLetra;
+
+    textoPrimera = "cadena";
+    primeraLetra = textoPrimera[0];
+    console.log(primeraLetra);
+
+    let textoUltima;
+    let ultimaLetra;
+
+    textoUltima = "programa";
+    ultimaLetra = textoUltima[textoUltima.length - 1];
+    console.log(ultimaLetra);
+
+    let textoRecorte;
+    let parteExtraida;
+
+    textoRecorte = "programación";
+    parteExtraida = textoRecorte.slice(0, 5);
+    console.log(parteExtraida);
+
+    let textoReemplazo;
+    let textoReemplazado;
+
+    textoReemplazo = "Me gusta JavaScript";
+    textoReemplazado = textoReemplazo.replace("JavaScript", "TypeScript");
+    console.log(textoReemplazado);
+
+    let textoBusqueda;
+    let contienePalabra;
+
+    textoBusqueda = "Aprender JS es divertido";
+    contienePalabra = textoBusqueda.includes("JS");
+    console.log(contienePalabra);
+
+    let textoSplit;
+    let palabras;
+
+    textoSplit = "uno dos tres";
+    palabras = textoSplit.split(" ");
+    console.log(palabras);
+
+    let textoConEspacios;
+    let textoSinEspacios;
+
+    textoConEspacios = "   hola   ";
+    textoSinEspacios = textoConEspacios.trim();
+    console.log(textoSinEspacios);
+
+    let textoRepetible;
+    let textoRepetido;
+
+    textoRepetible = "hey ";
+    textoRepetido = textoRepetible.repeat(3);
+    console.log(textoRepetido);
+
+    let textoCapitalizar;
+    let textoCapitalizado;
+
+    textoCapitalizar = "gato";
+    textoCapitalizado = textoCapitalizar.charAt(0).toUpperCase() + textoCapitalizar.slice(1);
+    console.log(textoCapitalizado);
+
+    let fraseContar;
+    let letraBuscada;
+    let conteoLetra;
+
+    fraseContar = "banana";
+    letraBuscada = "a";
+    conteoLetra = 0;
+    for (let posicion = 0; posicion < fraseContar.length; posicion++) {
+      if (fraseContar[posicion].toLowerCase() === letraBuscada.toLowerCase()) {
+        conteoLetra++;
+      }
+    }
+    console.log(conteoLetra);
+  </script>
+</body>
+</html>

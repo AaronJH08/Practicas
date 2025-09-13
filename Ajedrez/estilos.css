@@ -1,0 +1,49 @@
+
+* { box-sizing: border-box; }
+
+html, body { 
+    height: 100%;
+     margin: 0; 
+   
+ }
+
+body { 
+    display: flex;
+     justify-content: center; 
+     align-items: center; 
+     background: #eee;
+    
+ }
+
+.tablero{
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;   
+  aspect-ratio: 1 / 1;
+  background: #2f2f2f;
+}
+
+.casilla{
+  flex: 0 0 12.5%;
+  aspect-ratio: 1 / 1;
+  display: flex; 
+  justify-content: center;
+   align-items: center;
+}
+
+.casilla:nth-child(16n + 2),
+.casilla:nth-child(16n + 4),
+.casilla:nth-child(16n + 6),
+.casilla:nth-child(16n + 8),
+.casilla:nth-child(16n + 9),
+.casilla:nth-child(16n + 11),
+.casilla:nth-child(16n + 13),
+.casilla:nth-child(16n + 15){
+  background: #f0d9b5;
+}
+
+.casilla img{
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+}
