@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//Ejercicio 1
+function aPesos(n) {
+  return new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' }).format(n);
+}
+
+console.log('1)', aPesos(1234567));
+
+//Ejercicio 2
+function letras(txt) {
+  const cont = {};                                  
+  const recorre = txt.toLowerCase(); 
+
+  for (let i = 0; i < recorre.length; i++) {      
+    const letra = recorre[i];                        
+    if (cont[letra]) {                                  
+      cont[letra]++;                                    
+    } else {                                    
+      cont[letra] = 1;                                 
+    }
+  }
+  return cont;                                      
+}
+
+console.log(letras("Hola Mundo"));
+
+//Ejercicio 3
+function fechas(cadena) {
+  return cadena.split(',').map(recorre => {
+    const [año, mes, dia] = recorre.trim().split('-');
+    return { año: Number(año), mes: Number(mes), día: Number(dia) };
+  });
+}
+
+console.log(fechas("2025-09-15, 2023-02-10, 2024-06-25"));
+
+//Ejercicio 4
+let correos = "marcofpn@hotmail.com; marcelinobassett@hotmail.com; lauraquirogavalpa 1985@hotmail.com; joselyn-monsalve@lycos.es; karandare@gmail.com";
+
+function listaCorreos(cadena) {
+  return cadena.split(';').map(x => x.trim());
+}
+
+console.log(listaCorreos(correos));
+
+//Ejercicio 5
+
+
+
+
+
+
+
+
+</script>
+</html>

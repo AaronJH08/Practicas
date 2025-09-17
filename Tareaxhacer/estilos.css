@@ -1,0 +1,46 @@
+body { 
+    padding: 16px;
+ }
+
+.fila { 
+    display: flex; 
+    gap: 8px;
+     margin-bottom: 10px;
+}
+
+#texto { 
+    flex: 1;
+     padding: 6px;
+ }
+
+#agregar {
+     padding: 6px 10px;
+ }
+.contadores { 
+    margin-bottom: 10px;
+ }
+
+#lista { 
+    list-style: none;
+     padding: 0;
+ }
+
+.item { 
+    display: flex;
+    align-items: center;
+     gap: 8px;
+      margin: 6px 0;
+ }
+
+.texto {
+     flex: 1; 
+}
+
+.hecha { 
+    text-decoration: line-through;
+     opacity: .7; 
+}
+
+button.borrar { 
+    padding: 4px 8px;
+ }
